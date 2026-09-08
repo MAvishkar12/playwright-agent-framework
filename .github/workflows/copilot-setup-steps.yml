@@ -29,6 +29,8 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
 
-    # Customize this step as needed
-    - name: Build application
-      run: npx run build
+    - name: Run Copilot Setup Steps
+      run: |
+        echo "Running Copilot setup steps..."
+        # Add any custom setup steps here, e.g.:
+        # ./scripts/setup.sh
